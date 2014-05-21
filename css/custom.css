@@ -1,5 +1,16 @@
+::selection
+{
+color:#FFF;
+background:#2791bb;
+}
+::-moz-selection
+{
+color:#FFF;
+background:#2791bb;
+}
+
 html {background: #fff; border-bottom: 3px solid #fff4f6; padding: 0 0 3px; margin: 0;}
-body {font-size: 16px; color: #3e392f; font-family: 'Open Sans', Arial, Verdana, sans-serif; background: #49A7CD url(../img/bg_body.jpg) center bottom no-repeat; padding: 0; margin: 0;}
+body {font-size: 16px; color: #3e392f; font-family: 'Open Sans', Arial, Verdana, sans-serif; background: #3d9fc6 url(../img/body-bg.jpg) center bottom no-repeat; padding: 0; margin: 0;}
 
 a:focus {outline: none;}
 
@@ -38,21 +49,29 @@ div.sideban.right img {margin: 0;}
     .homepage .contentcol {float: none; width: 100%;}
 }
 
-#guidepost {margin-bottom: 10px;}
-#guidepost .item {position: relative; float: left; width: 173px; height: 566px; text-align: center; background: #fff; border-bottom: 42px solid #52a7c9; padding: 32px 8px 0; margin: 0 2px 3px 1px;}
+#guidepost {margin-bottom: 10px; text-align:center;}
+#guidepost .item {position: relative; /*float: left;*/ display:inline-block; width: 170px; height: 649px; text-align: center; background: #fff; padding: 32px 8px 0; margin: 0 1px 0 1px; vertical-align:top;}
 #guidepost .item a.logo {display: block; text-align: center; margin-bottom: 22px;}
 #guidepost .item p {font: 300 14px/19px 'Oswald', sans-serif; color: #282828; text-align: left;}
 #guidepost .item p a {color: #282828; text-decoration: underline;}
 #guidepost .item a.camera {position: absolute; bottom: 42px; left: 50%; margin-left: -34px;}
+
+#guidepost #crc {background:#f7f7f7 url(../img/backgrounds/1-content-bgrd.png) no-repeat; background-attachment:scroll; background-size:cover; background-position: bottom center;}
+#guidepost #rbtb {background:#f7f7f7 url(../img/backgrounds/2-content-bgrd.png) no-repeat; background-attachment:scroll; background-size:cover; background-position: bottom center;}
+#guidepost #hrrc {background:#f7f7f7 url(../img/backgrounds/3-content-bgrd.png) no-repeat; background-attachment:scroll; background-size:cover; background-position: bottom center;}
+#guidepost #wcbss {background:#f7f7f7 url(../img/backgrounds/4-content-bgrd.png) no-repeat; background-attachment:scroll; background-size:cover; background-position: bottom center;}
+#guidepost #arbc {background:#f7f7f7 url(../img/backgrounds/5-content-bgrd.png) no-repeat; background-attachment:scroll; background-size:cover; background-position: bottom center;}
 @media (max-width: 600px) {
-	#guidepost .item {width: 45%; padding: 32px 2% 0; margin: 0 0.5% 3px;}
+	#guidepost .item {width: 45%; padding: 32px 2% 0;}
 }
 
-@media (max-width: 400px) {
+@media (max-width: 435px) {
 	#guidepost {text-align: center;}
-	#guidepost .item {float: none; width: 284px; height: auto; padding: 32px 8px 22px; margin: 0 auto 3px;}
+	#guidepost .item {float: none; width: 284px; height: 555px; padding: 32px 8px 22px; margin: 0 auto 3px; display:block;}
 	#guidepost .item p {margin-bottom: 32px;}
 	#guidepost .item a.camera {position: relative; bottom: auto; left: auto; margin: 0 auto;}
+	#header {padding:0;}
+	#guidepost:first-child {margin-top:3px;}
 }
 
 .contacts {float: left; width: 500px;}
@@ -61,7 +80,7 @@ div.sideban.right img {margin: 0;}
 .contacts .address {float: left; width: 142px; font: 300 12px/16px 'Oswald', sans-serif; color: #282828; text-transform: uppercase; padding-top: 5px; margin-bottom: 10px;}
 .contacts .phone {float: left; width: 230px; font: 300 12px/16px 'Oswald', sans-serif; color: #282828; text-transform: uppercase; padding-top: 5px; margin-bottom: 10px;}
 .contacts strong,
-.contacts a {font-weight: 400;}
+.contacts a {font-weight: 400;color:#282828;}
 @media (max-width: 850px) {
 	.contacts {width: 330px;}
 	.contacts .address {width: 173px;}
@@ -114,6 +133,11 @@ div.sideban.right img {margin: 0;}
 #footer .copyright a {color: #fffdfd; text-decoration: none;}
 @media (max-width: 620px) {
     #footer .contacts{text-align: center;}
+	.mailing .content {max-width:100%;}
+}
+@media (max-width: 435px) {
+	.mailing .content {max-width:100%;}
+	.mailing form {background:none;}
 }
 
 .youtube {text-align: center;}

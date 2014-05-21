@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/index.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+    <meta charset="utf-8">
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>Brumley Management Group</title>
+    <!-- InstanceEndEditable -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="For almost two decades, Brumley Management Group has been producing exciting reining events in premier locations for contestants, owners, equine enthusiasts, and spectators alike. Participants and visitors from all over the world, including Canada, Mexico, Brazil, Italy and Germany, have participated in the shows, enjoying the sport of reining offered on all levels.">
+    <meta name="author" content="KMNI.com">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico">
+	<link href="http://fonts.googleapis.com/css?family=Oswald:400,300" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="js/colorbox/colorbox.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/social.css" rel="stylesheet">
+    <!-- InstanceBeginEditable name="head" -->
+    <!-- InstanceEndEditable -->
+</head>
+
+<body class="homepage" data-synchronize-columns="false">
+
+    <div id="header">
+        <div class="container">
+			<a id="logo" href="/" title=""><img src="img/logo-brumley-management-288x172.png" alt="Brumley Management Group" /></a>
+            <div class="social">
+				<a href="mailto:info@brumleymanagement.com" title="Send Us e-mail"><img src="img/icon-mail-30x30.png" alt="Email"></a>
+				<a href="https://www.facebook.com/BrumleyManagementGroupEvents" title="Facebook"><img src="img/icon-fb-30x30.png" alt="Facebook"></a>
+            </div> <!--// .social -->
+            <div class="cleaner"></div>
+        </div>
+    </div>
+
+    <div id="content">
+        <div class="container">
+			<div class="contentcol">
+				<div id="guidepost">
+                    <h2>Error 404</h2>
+                    <h2>Page Not Found<h2>
+                    <h1>The page you were looking for was not found.</h1>
+					<div class="cleaner"></div>
+				</div> <!--// #guidepost -->
+                
+				<div class="contacts">
+                	<a class="logo" href="" title="Brumley Management Group"><img src="./img/logo-brumley-management-group-92x56.png" alt="Logo Brumley Management Group"></a>
+                	<div class="address">
+                	<!-- InstanceBeginEditable name="Contacts - Address" -->
+                		29834 N. Cave Creek Rd<br>Suite 118-164<br>Cave Creek, AZ 85331
+                	<!-- InstanceEndEditable -->
+                	</div> <!--// .address -->
+                	<div class="phone">
+                	<!-- InstanceBeginEditable name="Contacts - Phone/Email" -->
+                		Tel: (602) 677-3774<br>Fax: (623) 670-5905<br>email: <strong><a href="mailto:info@brumleymanagement.com">info@brumleymanagement.com</a></strong>
+                	<!-- InstanceEndEditable -->
+                	</div> <!--// .phone -->
+                	<div class="cleaner"></div>
+                </div> <!--// .contacts -->
+
+				<div class="fb_stream">
+					<div class="content">
+						<h2><a href="https://www.facebook.com/BrumleyManagementGroupEvents" title="Follow Us on Facebook" target="_blank">Follow Us <img src="./img/icon-fb-28x28.png" alt="FB"> On Facebook <span>&gt;</span></a></h2>
+						<ul id="facebook" data-limit="4">
+							<li class="loading"><img src="./img/ajax-loader.gif" alt="Loading ..." width="24" height="24"><br>Loading…</li>
+						</ul>
+					</div> <!--// .content -->
+				</div> <!--// .fb_stream -->
+
+				<div class="mailing">
+					<div class="content">
+						<h2>Join Our Mailing List</h2>
+						<form name="ccoptin" action="http://visitor.constantcontact.com/d.jsp" target="_blank" method="post">
+							<input type="hidden" name="m" value="1102776244926">
+							<input type="hidden" name="p" value="oi">
+							<input type="text" name="ea" size="20" value="" placeholder="name@domain.com">
+							<input type="submit" name="go" value="Go" class="submit">
+							<div class="cleaner"></div>
+						</form>
+					</div> <!--// .content -->
+                </div> <!--// .mailing -->
+                
+            </div> <!--// .contentcol -->
+        </div> <!--// .container -->
+    </div> <!--// #content -->
+
+    <div id="footer">
+        <div class="container">
+            <div class="copyright">
+            <!-- InstanceBeginEditable name="Copyright" -->
+            	Copyright &copy; 2014. designed by <a href="http://www.kmni.com" title="Website designed by Knight Media Networks Inc." target="_blank">KMNI.com</a>
+            <!-- InstanceEndEditable -->
+            </div> <!--// .copyright -->
+        </div>
+    </div>
+
+    <script src="http://codeorigin.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/colorbox/jquery.colorbox-min.js"></script>
+    <script src="js/jquery.autolink.js"></script>
+    <script src="js/jquery.timeago.js"></script>
+    <script src="js/jquery.tmpl.min.js"></script>
+    <script src="js/twitter-text.js"></script>
+    <script src="js/social.js"></script>
+    <script src="js/hju.js"></script>
+    
+	<script id="facebook_template" type="text/x-jquery-tmpl">
+		{{if type != "status" || typeof message != "undefined" || typeof caption != "undefined" }}
+		<li class="clearfix">
+			<div class="date" title="${created_time}">${created_time}</div>
+			<div class="content clearfix">
+			{{if picture}}
+				<a class="image" href="${link}" target="_blank"><img alt="picture" src="${Social.facebookPictureURL(picture)}"></a>
+			{{/if}}
+			{{if message}}
+				<p class="html_message">{{html message}}</p>
+			{{/if}}
+			{{if caption}}
+				<p class="html_caption">{{html caption}}</p>
+			{{/if}}
+			{{if type == "link"}}
+				<div class="link">
+					<a href="${link}" target="_blank"><strong>${name}</strong></a> <i>${caption}</i>
+				{{if description}}
+					<p>${description}</p>
+				{{/if}}
+				</div> <!--// .link -->
+			{{/if}}
+			</div> <!--// .content -->
+		</li>
+		{{/if}}
+	</script>
+	<script>
+		// "103882419703669" is Facebook page ID
+		// "392120024178056|aqQUlwOblkyuLzKmxZm39SeBVck" is Facebook authentication token
+		Social.facebook("BrumleyManagementGroupEvents", "392120024178056|aqQUlwOblkyuLzKmxZm39SeBVck");
+	</script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42258040-5', 'brumleymanagement.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+<!-- InstanceEnd --></html>
